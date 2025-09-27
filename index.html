@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Rocha - Analista de Qualidade Jr.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header" id="home">
+        <nav class="nav">
+            <div class="nav__inner">
+                <a class="nav__logo" href="#home">Guilherme Rocha</a>
+                <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a class="nav__link" href="#formacao">Formação</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#cursos">Certificações</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#experiencia">Projetos</a></li>
+                        <li class="nav__item"><a class="nav__link nav__link--button" href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section class="heropage">
+            <div class="heropage__container">
+                <div class="heropage__image-content">
+                    <img src="images/perfil.png" alt="Foto de Perfil de Guilherme Rocha" class="heropage__img">
+                </div>
+                <div class="heropage__text-content">
+                    <h1 class="heropage__title">Olá, eu sou Guilherme Rocha</h1>
+                    <h2 class="heropage__subtitle">Analista de Qualidade Jr.</h2>
+                    <p class="heropage__description">
+                        Profissional de tecnologia em início de carreira, com forte atenção aos detalhes e perfil analítico. Com grande interesse pela área de Qualidade (QA), busco aplicar minha visão sistêmica para garantir a entrega de produtos de alta performance.
+                    </p>
+                    <div class="heropage__buttons">
+                        <a href="https://rock.dev" target="_blank" rel="noopener" class="button">Visite nossa empresa</a>
+                        <a href="mailto:dev.guirocha@gmail.com" class="button button--ghost">Hire me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section" id="formacao">
+            <h2 class="section__title">Formação Acadêmica</h2>
+            <div class="formacao__container">
+                <div class="formacao__content">
+                    <i class="fas fa-graduation-cap formacao__icon"></i>
+                    <h3 class="formacao__title">Pós-Graduação em IA</h3>
+                    <p class="formacao__description">
+                        Inteligência Artificial e Tecnologia na Gestão Pública<br>
+                        Gran Faculdades<br>
+                        Concluído
+                    </p>
+                </div>
+                <div class="formacao__content">
+                    <i class="fas fa-laptop-code formacao__icon"></i>
+                    <h3 class="formacao__title">Pós-Graduação em FullStack</h3>
+                    <p class="formacao__description">
+                        Desenvolvimento FullStack e Cloud Computing<br>
+                        Gran Faculdades<br>
+                        Previsão de Conclusão: 1º/2026
+                    </p>
+                </div>
+                <div class="formacao__content">
+                    <i class="fas fa-university formacao__icon"></i>
+                    <h3 class="formacao__title">Análise e Desenv. de Sistemas</h3>
+                    <p class="formacao__description">
+                        Tecnologia em Análise e Desenvolvimento de Sistemas<br>
+                        Gran Faculdades<br>
+                        Previsão de Conclusão: 1º/2027
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cursos">
+            <h2 class="section__title">Cursos e Certificações</h2>
+
+            <div class="cursos__layout">
+                <div class="cursos__tabs">
+                    <button class="curso__tab-button active" data-category="todos">Todos</button>
+                    <button class="curso__tab-button" data-category="frontend">Front-End</button>
+                    <button class="curso__tab-button" data-category="backend">Back-End</button>
+                    <button class="curso__tab-button" data-category="qa">Qualidade (QA)</button>
+                    <button class="curso__tab-button" data-category="dados">Dados & Banco de Dados</button>
+                    <button class="curso__tab-button" data-category="ferramentas">Ferramentas & Metodologias</button>
+                </div>
+
+                <div class="cursos__container">
+                <div class="curso__item" data-category="ferramentas">
+                    <p><strong>Curso:</strong> Scrum: agilidade em seu projeto</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/1cb437a7-4401-4c36-9bab-8196525f4665" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="qa">
+                    <p><strong>Curso:</strong> Formação Testes de integração e de UI</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/b775d55b-ebb3-4a46-be28-d575412cab6a" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> Formação React com TypeScript</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/a9b0417d-7cb2-4b2e-91ab-b601b96ccd0f" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="backend">
+                    <p><strong>Curso:</strong> Formação JavaScript para back-end</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/76a91eae-011c-4d61-a92d-6a81c993aaea" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="dados">
+                    <p><strong>Curso:</strong> SQL com MySQL: manipule e consulte dados</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/64daf85c-178b-4825-befb-d09b10d47c2e" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="dados">
+                    <p><strong>Curso:</strong> Python para Data Science: Primeiros passos</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/a26300d4-2168-468f-8e24-1572481ee94e" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> HTML e CSS: cabeçalho, footer e variáveis CSS</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/dc035b64-ba19-4a6f-91cb-9a7d190b0e23" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="ferramentas">
+                    <p><strong>Curso:</strong> Linux I: conhecendo e utilizando o terminal</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/b40bb84b-8563-482b-8180-cf14a2b03f96" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> HTML e CSS: ambientes de desenvolvimento...</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/942ade9a-40fb-42e4-8f18-15f48a1a66d6" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> HTML e CSS: Classes, posicionamento e Flexbox</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/2a507be4-d56c-4087-87a6-f2b68446c6fd" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> JavaScript: manipulando o DOM</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/2407a1a9-b1ab-4045-8259-805c790be46b" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> JavaScript: explorando a linguagem</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/71b3917e-c6dd-4fd6-b517-3f01fc08bf68" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> JavaScript: criando requisições</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/e8858f8f-9f03-4aa9-9e25-b23d7cdb6794" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="backend">
+                    <p><strong>Curso:</strong> Node.js: criando sua primeira biblioteca</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/9ddafc05-3016-424d-a8c2-fa215e701fd2" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> React: desenvolvendo com JavaScript</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/c9154e3d-ac10-4df7-8446-4d4652999442" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="frontend">
+                    <p><strong>Curso:</strong> React: como os componentes funcionam</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/97072267-170f-4ead-bff3-b664c3040e6c" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="ferramentas">
+                    <p><strong>Curso:</strong> Git e GitHub: repositório, commit e versões</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/f34f69a1-ce3a-4476-8b39-39e0e9f88183" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                <div class="curso__item" data-category="ferramentas">
+                    <p><strong>Curso:</strong> Lógica de programação: comece em lógica...</p>
+                    <p><strong>Instituição:</strong> Alura</p>
+                    <a href="https://cursos.alura.com.br/certificate/9229b256-8839-4e60-bc66-0cd8b33641f6" target="_blank" class="curso__link">Ver Certificado</a>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experiencia">
+            <h2 class="section__title">Experiência e Projetos</h2>
+            <h3 class="project__title" id="project-title">Projeto MedControlApp</h3>
+            <div class="carousel__container">
+                <div class="carousel__wrapper">
+                    <div class="carousel__slide" data-title="Projeto MedControlApp">
+                        <article class="project-card">
+                            <div class="project-card__media">
+                                <img src="images/MedControlApp.png" alt="Imagem do Projeto MedControlApp">
+                            </div>
+                            <div class="project-card__body">
+                                <span class="project-card__tag">Aplicativo Mobile</span>
+                                <h4 class="project-card__heading">Projeto MedControlApp</h4>
+                                <p class="project-card__description">Aplicativo mobile para acompanhamento de medicação e alertas inteligentes, com foco em acessibilidade e notificações precisas.</p>
+                                <div class="project-card__actions">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto MedControlApp no GitHub">
+                                        <i class="fab fa-github"></i>
+                                        <span>Ver no GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel__slide" data-title="Website Marmitas da Ka">
+                        <article class="project-card">
+                            <div class="project-card__media">
+                                <img src="images/MarmitasDaKa.png" alt="Imagem do Projeto Marmitas da Ka">
+                            </div>
+                            <div class="project-card__body">
+                                <span class="project-card__tag">Landing Page</span>
+                                <h4 class="project-card__heading">Website Marmitas da Ka</h4>
+                                <p class="project-card__description">Landing page responsiva para negócios locais, destacando catálogo de produtos, depoimentos e CTA otimizada para conversão.</p>
+                                <div class="project-card__actions">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto Marmitas da Ka no GitHub">
+                                        <i class="fab fa-github"></i>
+                                        <span>Ver no GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="carousel__slide" data-title="Projeto @wallet App">
+                        <article class="project-card">
+                            <div class="project-card__media">
+                                <img src="images/WalletAPP.png" alt="Imagem do Projeto @wallet App">
+                            </div>
+                            <div class="project-card__body">
+                                <span class="project-card__tag">Dashboard Web</span>
+                                <h4 class="project-card__heading">Projeto @wallet App</h4>
+                                <p class="project-card__description">Interface web para monitoramento financeiro, com gráficos e filtros dinâmicos pensados para decisões rápidas.</p>
+                                <div class="project-card__actions">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto @wallet App no GitHub">
+                                        <i class="fab fa-github"></i>
+                                        <span>Ver no GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <button class="carousel__button carousel__button--left" aria-label="Projeto anterior">&#10094;</button>
+                <button class="carousel__button carousel__button--right" aria-label="Próximo projeto">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="section" id="contato">
+            <h2 class="section__title">Entre em Contato</h2>
+            <div class="contato__container">
+                <p>Estou disponível para novas oportunidades e colaborações. Escolha o melhor canal para conversar comigo.</p>
+                <div class="contato__actions">
+                    <a href="https://linkedin.com/in/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--linkedin" aria-label="Perfil profissional no LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--github" aria-label="Ver repositórios no GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="sr-only">GitHub</span>
+                    </a>
+                    <a href="https://instagram.com/_guidev" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--instagram" aria-label="Perfil no Instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </div>
+
+                <div class="contato__cta">
+                    <a href="mailto:dev.guirocha@gmail.com" class="button contato__cta-button">Enviar um e-mail</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Guilherme Rocha. Todos os direitos reservados. Parte da equipe <span>Rock.Dev</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
