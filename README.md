@@ -40,11 +40,11 @@ Como este é um projeto web estático, não há necessidade de instalação de d
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/dev-guirocha/SEU-REPOSITORIO.git](https://github.com/dev-guirocha/SEU-REPOSITORIO.git)
+    git clone [https://github.com/dev-guirocha/Resume-rock.dev.git]
     ```
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd SEU-REPOSITORIO
+    cd Resume-rock.dev.git
     ```
 3.  **Abra o arquivo `index.html`** diretamente no seu navegador de preferência.
 
