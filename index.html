@@ -13,17 +13,25 @@
         <nav class="nav">
             <div class="nav__inner">
                 <a class="nav__logo" href="#home">Guilherme Rocha</a>
-                <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Abrir menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+
+                <div class="nav__actions">
+                    <div class="language-switcher" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="language.switcherLabel">
+                        <button type="button" class="language-switcher__button active" data-lang="pt" aria-pressed="true" data-i18n-aria-label="language.toPortuguese">PT</button>
+                        <button type="button" class="language-switcher__button" data-lang="en" aria-pressed="false" data-i18n-aria-label="language.toEnglish">EN</button>
+                    </div>
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-label="Abrir menu" data-i18n-aria-label="nav.openMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
                 <div class="nav__menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a class="nav__link" href="#formacao">Formação</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#cursos">Certificações</a></li>
-                        <li class="nav__item"><a class="nav__link" href="#experiencia">Projetos</a></li>
-                        <li class="nav__item"><a class="nav__link nav__link--button" href="#contato">Contato</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#formacao" data-i18n="nav.formation">Formação</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#cursos" data-i18n="nav.certifications">Certificações</a></li>
+                        <li class="nav__item"><a class="nav__link" href="#experiencia" data-i18n="nav.projects">Projetos</a></li>
+                        <li class="nav__item"><a class="nav__link nav__link--button" href="#contato" data-i18n="nav.contact">Contato</a></li>
                     </ul>
                 </div>
             </div>
@@ -32,17 +40,17 @@
         <section class="heropage">
             <div class="heropage__container">
                 <div class="heropage__image-content">
-                    <img src="images/perfil.png" alt="Foto de Perfil de Guilherme Rocha" class="heropage__img">
+                    <img src="images/perfil.png" alt="Foto de Perfil de Guilherme Rocha" class="heropage__img" data-i18n-alt="hero.imageAlt">
                 </div>
                 <div class="heropage__text-content">
-                    <h1 class="heropage__title">Olá, eu sou Guilherme Rocha</h1>
-                    <h2 class="heropage__subtitle">Analista de Qualidade Jr.</h2>
-                    <p class="heropage__description">
+                    <h1 class="heropage__title" data-i18n="hero.title">Olá, eu sou Guilherme Rocha</h1>
+                    <h2 class="heropage__subtitle" data-i18n="hero.subtitle">Analista de Qualidade Jr.</h2>
+                    <p class="heropage__description" data-i18n="hero.description">
                         Profissional de tecnologia em início de carreira, com forte atenção aos detalhes e perfil analítico. Com grande interesse pela área de Qualidade (QA), busco aplicar minha visão sistêmica para garantir a entrega de produtos de alta performance.
                     </p>
                     <div class="heropage__buttons">
-                        <a href="https://dev-guirocha.github.io/Website_rock.dev/index.html" target="_blank" rel="noopener" class="button">Visite nossa empresa</a>
-                        <a href="mailto:dev.guirocha@gmail.com" class="button button--ghost">Hire me</a>
+                        <a href="https://dev-guirocha.github.io/Website_rock.dev/index.html" target="_blank" rel="noopener" class="button" data-i18n="hero.visitCompany">Visite nossa empresa</a>
+                        <a href="mailto:dev.guirocha@gmail.com" class="button button--ghost" data-i18n="hero.hireMe">Contrate-me</a>
                     </div>
                 </div>
             </div>
@@ -51,12 +59,12 @@
 
     <main>
         <section class="section" id="formacao">
-            <h2 class="section__title">Formação Acadêmica</h2>
+            <h2 class="section__title" data-i18n="formation.sectionTitle">Formação Acadêmica</h2>
             <div class="formacao__container">
                 <div class="formacao__content">
                     <i class="fas fa-graduation-cap formacao__icon"></i>
-                    <h3 class="formacao__title">Pós-Graduação em IA</h3>
-                    <p class="formacao__description">
+                    <h3 class="formacao__title" data-i18n="formation.items.ai.title">Pós-Graduação em IA</h3>
+                    <p class="formacao__description" data-i18n="formation.items.ai.description" data-i18n-type="html">
                         Inteligência Artificial e Tecnologia na Gestão Pública<br>
                         Gran Faculdades<br>
                         Concluído
@@ -64,8 +72,8 @@
                 </div>
                 <div class="formacao__content">
                     <i class="fas fa-laptop-code formacao__icon"></i>
-                    <h3 class="formacao__title">Pós-Graduação em FullStack</h3>
-                    <p class="formacao__description">
+                    <h3 class="formacao__title" data-i18n="formation.items.fullstack.title">Pós-Graduação em FullStack</h3>
+                    <p class="formacao__description" data-i18n="formation.items.fullstack.description" data-i18n-type="html">
                         Desenvolvimento FullStack e Cloud Computing<br>
                         Gran Faculdades<br>
                         Previsão de Conclusão: 1º/2026
@@ -73,8 +81,8 @@
                 </div>
                 <div class="formacao__content">
                     <i class="fas fa-university formacao__icon"></i>
-                    <h3 class="formacao__title">Análise e Desenv. de Sistemas</h3>
-                    <p class="formacao__description">
+                    <h3 class="formacao__title" data-i18n="formation.items.systems.title">Análise e Desenv. de Sistemas</h3>
+                    <p class="formacao__description" data-i18n="formation.items.systems.description" data-i18n-type="html">
                         Tecnologia em Análise e Desenvolvimento de Sistemas<br>
                         Gran Faculdades<br>
                         Previsão de Conclusão: 1º/2027
@@ -84,216 +92,117 @@
         </section>
 
         <section class="section" id="cursos">
-            <h2 class="section__title">Cursos e Certificações</h2>
+            <h2 class="section__title" data-i18n="courses.sectionTitle">Cursos e Certificações</h2>
 
             <div class="cursos__layout">
                 <div class="cursos__tabs">
-                    <button class="curso__tab-button active" data-category="todos">Todos</button>
-                    <button class="curso__tab-button" data-category="frontend">Front-End</button>
-                    <button class="curso__tab-button" data-category="backend">Back-End</button>
-                    <button class="curso__tab-button" data-category="qa">Qualidade (QA)</button>
-                    <button class="curso__tab-button" data-category="dados">Dados & Banco de Dados</button>
-                    <button class="curso__tab-button" data-category="ferramentas">Ferramentas & Metodologias</button>
+                    <button class="curso__tab-button active" data-category="todos" data-i18n="courses.tabs.todos">Todos</button>
+                    <button class="curso__tab-button" data-category="frontend" data-i18n="courses.tabs.frontend">Front-End</button>
+                    <button class="curso__tab-button" data-category="backend" data-i18n="courses.tabs.backend">Back-End</button>
+                    <button class="curso__tab-button" data-category="qa" data-i18n="courses.tabs.qa">Qualidade (QA)</button>
+                    <button class="curso__tab-button" data-category="dados" data-i18n="courses.tabs.dados">Dados &amp; Banco de Dados</button>
+                    <button class="curso__tab-button" data-category="ferramentas" data-i18n="courses.tabs.ferramentas">Ferramentas &amp; Metodologias</button>
                 </div>
 
-                <div class="cursos__container">
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Inteligência Artificial: campanhas de Marketing Digital</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/1cb437a7-4401-4c36-9bab-8196525f4665" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> HTML5 e CSS3 parte 1: crie uma página da Web</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/b775d55b-ebb3-4a46-be28-d575412cab6a" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Negociação: treinando habilidades com IA</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/a9b0417d-7cb2-4b2e-91ab-b601b96ccd0f" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Aprendizagem: personalizando sua rotina de estudos com ChatGPT</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/76a91eae-011c-4d61-a92d-6a81c993aaea" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Copywriting: criando textos persuasivos com Inteligência Artificial</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/64daf85c-178b-4825-befb-d09b10d47c2e" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> ChatGPT: desvendando a IA em conversas e suas aplicações</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/a26300d4-2168-468f-8e24-1572481ee94e" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> ChatGPT: otimizando a qualidade dos resultados</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/dc035b64-ba19-4a6f-91cb-9a7d190b0e23" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Engenharia de Prompt: criando prompts eficazes para IA Generativa</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/b40bb84b-8563-482b-8180-cf14a2b03f96" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> IA: explorando o potencial da inteligência artificial generativa</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/942ade9a-40fb-42e4-8f18-15f48a1a66d6" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> HTML5 e CSS3 parte 4: avançando no CSS</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/2a507be4-d56c-4087-87a6-f2b68446c6fd" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> HTML5 e CSS3 parte 2: posicionamento, listas e navegação</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/2407a1a9-b1ab-4045-8259-805c790be46b" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/71b3917e-c6dd-4fd6-b517-3f01fc08bf68" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> JavaScript para Web: Crie páginas dinâmicas</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/e8858f8f-9f03-4aa9-9e25-b23d7cdb6794" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> JavaScript: explorando a linguagem</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/9ddafc05-3016-424d-a8c2-fa215e701fd2" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> Lógica de programação: mergulhe em programação com JavaScript</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/c9154e3d-ac10-4df7-8446-4d4652999442" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="frontend">
-                    <p><strong>Curso:</strong> JavaScript: programando na linguagem da web</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/97072267-170f-4ead-bff3-b664c3040e6c" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Certificação PMI-ACP: conheça a Cultura Ágil e seu potencial de aplicação</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/f34f69a1-ce3a-4476-8b39-39e0e9f88183" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Certificação PMI-ACP: entenda mais sobre o Scrum</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/2ecd29d1-0991-4258-a22b-aacd9e34e71a" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Certificação PMI-ACP: entenda a estrutura do Scrum</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/6c7555eb-c612-4f18-a56d-b1fc2d0c5038" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
-                <div class="curso__item" data-category="ferramentas">
-                    <p><strong>Curso:</strong> Inteligência Artificial: gestão de mídias sociais</p>
-                    <p><strong>Instituição:</strong> Alura</p>
-                    <a href="https://cursos.alura.com.br/certificate/9229b256-8839-4e60-bc66-0cd8b33641f6" target="_blank" class="curso__link">Ver Certificado</a>
-                </div>
+                <div class="cursos__container" data-courses-container>
+                    <!-- Conteúdo dos cursos inserido dinamicamente -->
                 </div>
             </div>
         </section>
 
         <section class="section" id="experiencia">
-            <h2 class="section__title">Experiência e Projetos</h2>
+            <h2 class="section__title" data-i18n="projects.sectionTitle">Experiência e Projetos</h2>
             <h3 class="project__title" id="project-title">Projeto MedControlApp</h3>
             <div class="carousel__container">
                 <div class="carousel__wrapper">
-                    <div class="carousel__slide" data-title="Projeto MedControlApp">
+                    <div class="carousel__slide" data-i18n-title="projects.items.medcontrol.title">
                         <article class="project-card">
                             <div class="project-card__media">
-                                <img src="images/MedControlApp.png" alt="Imagem do Projeto MedControlApp">
+                                <img src="images/MedControlApp.png" alt="Imagem do Projeto MedControlApp" data-i18n-alt="projects.items.medcontrol.imageAlt">
                             </div>
                             <div class="project-card__body">
-                                <span class="project-card__tag">Aplicativo Mobile</span>
-                                <h4 class="project-card__heading">Projeto MedControlApp</h4>
-                                <p class="project-card__description">Aplicativo mobile para acompanhamento de medicação e alertas inteligentes, com foco em acessibilidade e notificações precisas.</p>
+                                <span class="project-card__tag" data-i18n="projects.items.medcontrol.tag">Aplicativo Mobile</span>
+                                <h4 class="project-card__heading" data-i18n="projects.items.medcontrol.heading">Projeto MedControlApp</h4>
+                                <p class="project-card__description" data-i18n="projects.items.medcontrol.description">Aplicativo mobile para acompanhamento de medicação e alertas inteligentes, com foco em acessibilidade e notificações precisas.</p>
                                 <div class="project-card__actions">
-                                    <a href="#" class="project-card__link" aria-label="Ver projeto MedControlApp no GitHub">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto MedControlApp no GitHub" data-i18n-aria-label="projects.items.medcontrol.aria">
                                         <i class="fab fa-github"></i>
-                                        <span>Ver no GitHub</span>
+                                        <span data-i18n="projects.viewOnGithub">Ver no GitHub</span>
                                     </a>
                                 </div>
                             </div>
                         </article>
                     </div>
-                    <div class="carousel__slide" data-title="Website Marmitas da Ka">
+                    <div class="carousel__slide" data-i18n-title="projects.items.marmitas.title">
                         <article class="project-card">
                             <div class="project-card__media">
-                                <img src="images/MarmitasDaKa.png" alt="Imagem do Projeto Marmitas da Ka">
+                                <img src="images/MarmitasDaKa.png" alt="Imagem do Projeto Marmitas da Ka" data-i18n-alt="projects.items.marmitas.imageAlt">
                             </div>
                             <div class="project-card__body">
-                                <span class="project-card__tag">Landing Page</span>
-                                <h4 class="project-card__heading">Website Marmitas da Ka</h4>
-                                <p class="project-card__description">Landing page responsiva para negócios locais, destacando catálogo de produtos, depoimentos e CTA otimizada para conversão.</p>
+                                <span class="project-card__tag" data-i18n="projects.items.marmitas.tag">Landing Page</span>
+                                <h4 class="project-card__heading" data-i18n="projects.items.marmitas.heading">Website Marmitas da Ka</h4>
+                                <p class="project-card__description" data-i18n="projects.items.marmitas.description">Landing page responsiva para negócios locais, destacando catálogo de produtos, depoimentos e CTA otimizada para conversão.</p>
                                 <div class="project-card__actions">
-                                    <a href="#" class="project-card__link" aria-label="Ver projeto Marmitas da Ka no GitHub">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto Marmitas da Ka no GitHub" data-i18n-aria-label="projects.items.marmitas.aria">
                                         <i class="fab fa-github"></i>
-                                        <span>Ver no GitHub</span>
+                                        <span data-i18n="projects.viewOnGithub">Ver no GitHub</span>
                                     </a>
                                 </div>
                             </div>
                         </article>
                     </div>
-                    <div class="carousel__slide" data-title="Projeto @wallet App">
+                    <div class="carousel__slide" data-i18n-title="projects.items.wallet.title">
                         <article class="project-card">
                             <div class="project-card__media">
-                                <img src="images/WalletAPP.png" alt="Imagem do Projeto @wallet App">
+                                <img src="images/WalletAPP.png" alt="Imagem do Projeto @wallet App" data-i18n-alt="projects.items.wallet.imageAlt">
                             </div>
                             <div class="project-card__body">
-                                <span class="project-card__tag">Dashboard Web</span>
-                                <h4 class="project-card__heading">Projeto @wallet App</h4>
-                                <p class="project-card__description">Interface web para monitoramento financeiro, com gráficos e filtros dinâmicos pensados para decisões rápidas.</p>
+                                <span class="project-card__tag" data-i18n="projects.items.wallet.tag">Dashboard Web</span>
+                                <h4 class="project-card__heading" data-i18n="projects.items.wallet.heading">Projeto @wallet App</h4>
+                                <p class="project-card__description" data-i18n="projects.items.wallet.description">Interface web para monitoramento financeiro, com gráficos e filtros dinâmicos pensados para decisões rápidas.</p>
                                 <div class="project-card__actions">
-                                    <a href="#" class="project-card__link" aria-label="Ver projeto @wallet App no GitHub">
+                                    <a href="#" class="project-card__link" aria-label="Ver projeto @wallet App no GitHub" data-i18n-aria-label="projects.items.wallet.aria">
                                         <i class="fab fa-github"></i>
-                                        <span>Ver no GitHub</span>
+                                        <span data-i18n="projects.viewOnGithub">Ver no GitHub</span>
                                     </a>
                                 </div>
                             </div>
                         </article>
                     </div>
                 </div>
-                <button class="carousel__button carousel__button--left" aria-label="Projeto anterior">&#10094;</button>
-                <button class="carousel__button carousel__button--right" aria-label="Próximo projeto">&#10095;</button>
+                <button class="carousel__button carousel__button--left" aria-label="Projeto anterior" data-i18n-aria-label="projects.sliderPrev">&#10094;</button>
+                <button class="carousel__button carousel__button--right" aria-label="Próximo projeto" data-i18n-aria-label="projects.sliderNext">&#10095;</button>
             </div>
         </section>
 
         <section class="section" id="contato">
-            <h2 class="section__title">Entre em Contato</h2>
+            <h2 class="section__title" data-i18n="contact.sectionTitle">Entre em Contato</h2>
             <div class="contato__container">
-                <p>Estou disponível para novas oportunidades e colaborações. Escolha o melhor canal para conversar comigo.</p>
+                <p data-i18n="contact.description">Estou disponível para novas oportunidades e colaborações. Escolha o melhor canal para conversar comigo.</p>
                 <div class="contato__actions">
-                    <a href="https://linkedin.com/in/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--linkedin" aria-label="Perfil profissional no LinkedIn">
+                    <a href="https://linkedin.com/in/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--linkedin" aria-label="Perfil profissional no LinkedIn" data-i18n-aria-label="contact.linkedinAria">
                         <i class="fab fa-linkedin"></i>
                         <span class="sr-only">LinkedIn</span>
                     </a>
-                    <a href="https://github.com/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--github" aria-label="Ver repositórios no GitHub">
+                    <a href="https://github.com/dev-guirocha" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--github" aria-label="Ver repositórios no GitHub" data-i18n-aria-label="contact.githubAria">
                         <i class="fab fa-github"></i>
                         <span class="sr-only">GitHub</span>
                     </a>
-                    <a href="https://instagram.com/_guidev" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--instagram" aria-label="Perfil no Instagram">
+                    <a href="https://instagram.com/_guidev" target="_blank" rel="noopener" class="contato__icon-button contato__icon-button--instagram" aria-label="Perfil no Instagram" data-i18n-aria-label="contact.instagramAria">
                         <i class="fab fa-instagram"></i>
                         <span class="sr-only">Instagram</span>
                     </a>
                 </div>
 
                 <div class="contato__cta">
-                    <a href="mailto:dev.guirocha@gmail.com" class="button contato__cta-button">Enviar um e-mail</a>
+                    <a href="mailto:dev.guirocha@gmail.com" class="button contato__cta-button" data-i18n="contact.emailButton">Enviar um e-mail</a>
                 </div>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <p>&copy; 2025 Guilherme Rocha. Todos os direitos reservados. Parte da equipe <span>Rock.Dev</span></p>
+        <p data-i18n="footer.text" data-i18n-type="html">&copy; 2025 Guilherme Rocha. Todos os direitos reservados. Parte da equipe <span>Rock.Dev</span></p>
     </footer>
 
     <script src="script.js"></script>

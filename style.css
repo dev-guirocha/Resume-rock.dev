@@ -102,7 +102,7 @@ main .section:nth-of-type(2n + 1) {
     padding: 0 clamp(1.5rem, 5vw, 3.5rem);
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1.5rem;
 }
 
@@ -143,6 +143,49 @@ main .section:nth-of-type(2n + 1) {
 .nav__toggle--open span:nth-child(1) { transform: translateY(6px) rotate(45deg); }
 .nav__toggle--open span:nth-child(2) { opacity: 0; }
 .nav__toggle--open span:nth-child(3) { transform: translateY(-6px) rotate(-45deg); }
+
+.nav__actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+}
+
+.language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.2rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(13, 15, 35, 0.12);
+    background-color: rgba(13, 15, 35, 0.04);
+}
+
+.language-switcher__button {
+    border: none;
+    background: transparent;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 0.35rem 0.85rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.language-switcher__button.active {
+    background: var(--gradient-primary);
+    color: #FFF;
+    box-shadow: 0 10px 18px rgba(13, 15, 35, 0.12);
+}
+
+.language-switcher__button:hover {
+    background-color: rgba(13, 15, 35, 0.08);
+}
+
+.language-switcher__button.active:hover {
+    background: var(--gradient-primary);
+}
 
 .nav__menu {
     position: absolute;
@@ -581,6 +624,7 @@ main .section:nth-of-type(2n + 1) {
     .nav { padding: 1rem 0; }
     .nav__inner { padding: 0 clamp(2.5rem, 6vw, 4rem); }
     .nav__toggle { display: none; }
+    .nav__actions { margin-left: 1.5rem; margin-right: 1.5rem; }
     .nav__menu {
         position: static;
         width: auto;
