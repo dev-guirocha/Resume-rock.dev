@@ -1,0 +1,22 @@
+---
+import profile from '../data/profile.json';
+import ui from '../data/ui.json';
+import KpiStrip from './KpiStrip.astro';
+import { t, withBase } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<section class="hero container" id="topo">
+  <img class="hero__photo" src={withBase(profile.photo)} alt={t(ui.hero.photoAlt, lang)} width="160" height="160" />
+  <div class="hero__text">
+    <h1 class="hero__name">{profile.name}</h1>
+    <p class="hero__role">{t(profile.role, lang)}</p>
+    <p class="hero__summary">{t(profile.summary, lang)}</p>
+    <div class="hero__actions">
+      <a class="button" href={`mailto:${profile.email}`}>{t(ui.hero.email, lang)}</a>
+      <a class="button button--ghost" href={profile.links.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+      <a class="button button--ghost" href={profile.links.github} target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+  <KpiStrip lang={lang} />
+</section>
