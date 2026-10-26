@@ -1,0 +1,35 @@
+---
+import experience from '../data/experience.json';
+import ui from '../data/ui.json';
+import { t } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<section class="section container" id="experiencia">
+  <h2 class="section__title">{t(ui.sections.experiencia, lang)}</h2>
+  <ol class="timeline">
+    {experience.map((job) => (
+      <li class="timeline__item" data-job>
+        <div class="timeline__head">
+          <h3 class="timeline__org">{t(job.org, lang)}</h3>
+          {job.period && <span class="timeline__period">{t(job.period, lang)}</span>}
+        </div>
+        <p class="timeline__role">{t(job.role, lang)}</p>
+        <ul class="timeline__highlights">
+          {job.highlights.map((h) => (
+            <li>
+              <strong>{t(h.title, lang)}</strong>
+              {h.text && <span>: {t(h.text, lang)}</span>}
+              {h.items && (
+                <ul class="timeline__sub">
+                  {h.items.map((item) => <li>{t(item, lang)}</li>)}
+                </ul>
+              )}
+            </li>
+          ))}
+        </ul>
+        {job.tags && <ul class="tags">{job.tags.map((tag) => <li>{tag}</li>)}</ul>}
+      </li>
+    ))}
+  </ol>
+</section>

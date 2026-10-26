@@ -26,3 +26,33 @@ test('seletor de idioma aponta para as duas páginas', () => {
     assert.match(page(lang), new RegExp(`href="${BASE}/en/"`));
   }
 });
+
+test('seções de experiência, projetos, competências e formação existem nos dois idiomas', () => {
+  for (const lang of LANGS) {
+    for (const id of ['experiencia', 'projetos', 'competencias', 'formacao']) {
+      assert.match(page(lang), new RegExp(`id="${id}"`), `${lang}: falta #${id}`);
+    }
+  }
+});
+
+test('experiência: 2 entradas e o cargo na Comissão de SI', () => {
+  assert.match(page('pt'), /Diretor da Comissão de Segurança da Informação/);
+  assert.match(page('en'), /Director, Information Security Committee/);
+  assert.match(page('pt'), /4 sistemas em produção em 4 meses/);
+  for (const lang of LANGS) assert.equal(count(page(lang), 'data-job'), 2, lang);
+});
+
+test('projetos: 3 cards e nenhum link morto', () => {
+  for (const lang of LANGS) {
+    assert.equal(count(page(lang), 'data-project'), 3, lang);
+    assert.doesNotMatch(page(lang), /href="#"/);
+  }
+});
+
+test('competências: 4 grupos; formação: 3 itens sem IFS', () => {
+  for (const lang of LANGS) {
+    assert.equal(count(page(lang), 'data-skill-group'), 4, lang);
+    assert.equal(count(page(lang), 'data-education'), 3, lang);
+    assert.doesNotMatch(page(lang), /IFS|Instituto Federal/);
+  }
+});
