@@ -1,6 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 const BASE = '/Resume-rock.dev';
 const LANGS = ['pt', 'en'];
@@ -54,5 +55,32 @@ test('competências: 4 grupos; formação: 3 itens sem IFS', () => {
     assert.equal(count(page(lang), 'data-skill-group'), 4, lang);
     assert.equal(count(page(lang), 'data-education'), 3, lang);
     assert.doesNotMatch(page(lang), /IFS|Instituto Federal/);
+  }
+});
+
+test('20 cursos por idioma, cada certificado aponta para um PDF que existe em dist', () => {
+  for (const lang of LANGS) {
+    const html = page(lang);
+    assert.equal(count(html, 'data-course-item'), 20, lang);
+    const hrefs = [...html.matchAll(/<a[^>]*class="course__link"[^>]*href="([^"]+)"/g)].map((m) => m[1]);
+    assert.equal(hrefs.length, 20, `${lang}: links de certificado`);
+    for (const href of hrefs) {
+      assert.ok(href.startsWith(`${BASE}/`), href);
+      const file = join('dist', decodeURI(href.slice(BASE.length + 1)));
+      assert.ok(existsSync(file), `PDF ausente: ${file}`);
+    }
+    console.log(`# ${lang}: ${hrefs.length} links de certificado conferidos`);
+  }
+});
+
+test('contato tem e-mail, LinkedIn e GitHub; rodapé tem o ano', () => {
+  const year = String(new Date().getFullYear());
+  for (const lang of LANGS) {
+    const html = page(lang);
+    assert.match(html, /id="contato"/);
+    assert.match(html, /href="mailto:dev\.guirocha@gmail\.com"/);
+    assert.match(html, /linkedin\.com\/in\/dev-guirocha/);
+    assert.match(html, /github\.com\/dev-guirocha/);
+    assert.match(html, new RegExp(`© ${year}`));
   }
 });
