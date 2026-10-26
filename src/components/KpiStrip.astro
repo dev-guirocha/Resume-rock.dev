@@ -1,0 +1,15 @@
+---
+import profile from '../data/profile.json';
+import ui from '../data/ui.json';
+import { t } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<ul class="kpis" aria-label={t(ui.hero.kpisLabel, lang)}>
+  {profile.kpis.map((kpi) => (
+    <li class="kpi" data-kpi>
+      <span class="kpi__value">{t(kpi.value, lang)}</span>
+      <span class="kpi__label">{t(kpi.label, lang)}</span>
+    </li>
+  ))}
+</ul>

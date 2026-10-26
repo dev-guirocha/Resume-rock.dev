@@ -1,0 +1,23 @@
+[
+  {
+    "course": { "pt": "Tecnologia em Análise e Desenvolvimento de Sistemas", "en": "Associate degree in Systems Analysis and Development" },
+    "institution": "Gran Faculdades",
+    "hours": null,
+    "period": { "pt": "previsão de conclusão: 2027.1", "en": "expected completion: first half of 2027" },
+    "status": { "pt": "em andamento", "en": "in progress" }
+  },
+  {
+    "course": { "pt": "Pós-graduação em Desenvolvimento Full Stack e Cloud Computing", "en": "Postgraduate specialization in Full Stack Development and Cloud Computing" },
+    "institution": "Gran Centro Universitário",
+    "hours": 360,
+    "period": { "pt": "fev/2025 – mai/2026", "en": "Feb 2025 – May 2026" },
+    "status": { "pt": "concluída", "en": "completed" }
+  },
+  {
+    "course": { "pt": "Pós-graduação em Inteligência Artificial e Tecnologia na Gestão Pública", "en": "Postgraduate specialization in Artificial Intelligence and Technology in Public Management" },
+    "institution": "Gran Centro Universitário",
+    "hours": 360,
+    "period": { "pt": "fev/2025 – ago/2025", "en": "Feb 2025 – Aug 2025" },
+    "status": { "pt": "concluída", "en": "completed" }
+  }
+]

@@ -1,0 +1,23 @@
+---
+import projects from '../data/projects.json';
+import ui from '../data/ui.json';
+import { t, withBase } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<section class="section container" id="projetos">
+  <h2 class="section__title">{t(ui.sections.projetos, lang)}</h2>
+  <div class="cards">
+    {projects.map((p) => (
+      <article class="card" data-project>
+        <img class="card__img" src={withBase(p.image)} alt={t(p.imageAlt, lang)} loading="lazy" />
+        <div class="card__body">
+          <span class="card__tag">{t(p.tag, lang)}</span>
+          <h3 class="card__title">{p.name}</h3>
+          <p>{t(p.description, lang)}</p>
+          {p.url && <a class="card__link" href={p.url} target="_blank" rel="noopener">{t(ui.projects.view, lang)}</a>}
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

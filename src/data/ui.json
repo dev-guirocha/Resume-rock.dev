@@ -1,0 +1,34 @@
+{
+  "nav": {
+    "label": { "pt": "Navegação principal", "en": "Main navigation" },
+    "menu": { "pt": "Menu", "en": "Menu" }
+  },
+  "language": { "label": { "pt": "Idioma", "en": "Language" } },
+  "sections": {
+    "experiencia": { "pt": "Experiência", "en": "Experience" },
+    "projetos": { "pt": "Projetos", "en": "Projects" },
+    "competencias": { "pt": "Competências", "en": "Skills" },
+    "formacao": { "pt": "Formação", "en": "Education" },
+    "cursos": { "pt": "Cursos e certificações", "en": "Courses & certifications" },
+    "contato": { "pt": "Contato", "en": "Contact" }
+  },
+  "hero": {
+    "photoAlt": { "pt": "Foto de Guilherme Rocha", "en": "Photo of Guilherme Rocha" },
+    "email": { "pt": "Enviar e-mail", "en": "Send an email" },
+    "kpisLabel": { "pt": "Destaques", "en": "Highlights" }
+  },
+  "projects": { "view": { "pt": "Ver projeto", "en": "View project" } },
+  "courses": {
+    "filterLabel": { "pt": "Filtrar cursos por categoria", "en": "Filter courses by category" },
+    "all": { "pt": "Todos", "en": "All" },
+    "certificate": { "pt": "Ver certificado", "en": "View certificate" },
+    "categories": {
+      "frontend": { "pt": "Front-end", "en": "Front-end" },
+      "ferramentas": { "pt": "Ferramentas e metodologias", "en": "Tools & methodologies" }
+    }
+  },
+  "contact": {
+    "text": { "pt": "Estou aberto a conversas sobre dados, BI e produtos de dados. Escolha o canal:", "en": "I'm open to conversations about data, BI and data products. Pick a channel:" }
+  },
+  "footer": { "role": { "pt": "Analista de BI — Real Invest", "en": "BI Analyst — Real Invest" } }
+}

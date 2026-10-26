@@ -1,0 +1,21 @@
+{
+  "name": "Guilherme Rocha",
+  "role": { "pt": "Analista de BI", "en": "BI Analyst" },
+  "summary": {
+    "pt": "Construo ferramentas de dados de ponta a ponta no mercado financeiro, da fonte ao painel, com uso intensivo de IA no desenvolvimento.",
+    "en": "I build end-to-end data tools for the financial market, from source to dashboard, with heavy use of AI in development."
+  },
+  "photo": "images/perfil.png",
+  "email": "dev.guirocha@gmail.com",
+  "links": {
+    "linkedin": "https://linkedin.com/in/dev-guirocha",
+    "github": "https://github.com/dev-guirocha",
+    "instagram": "https://instagram.com/_guidev"
+  },
+  "kpis": [
+    { "value": "4", "label": { "pt": "sistemas em produção", "en": "systems in production" } },
+    { "value": "4", "label": { "pt": "meses (jul–out/2026)", "en": "months (Jul–Oct 2026)" } },
+    { "value": "2", "label": { "pt": "pós-graduações concluídas", "en": "postgraduate degrees completed" } },
+    { "value": { "pt": "SI", "en": "InfoSec" }, "label": { "pt": "Diretor da Comissão de Segurança da Informação", "en": "Director, Information Security Committee" } }
+  ]
+}

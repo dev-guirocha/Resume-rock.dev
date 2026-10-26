@@ -1,0 +1,19 @@
+---
+import education from '../data/education.json';
+import ui from '../data/ui.json';
+import { t } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<section class="section container" id="formacao">
+  <h2 class="section__title">{t(ui.sections.formacao, lang)}</h2>
+  <ul class="education">
+    {education.map((e) => (
+      <li class="education__item" data-education>
+        <h3>{t(e.course, lang)}</h3>
+        <p class="education__meta">{e.institution}{e.hours ? ` · ${e.hours}h` : ''}</p>
+        <p class="education__period">{t(e.period, lang)} · {t(e.status, lang)}</p>
+      </li>
+    ))}
+  </ul>
+</section>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "medcontrol",
+    "name": "MedControlApp",
+    "image": "images/MedControlApp.png",
+    "url": null,
+    "tag": { "pt": "Aplicativo mobile", "en": "Mobile app" },
+    "description": { "pt": "Aplicativo mobile para acompanhamento de medicação e alertas inteligentes, com foco em acessibilidade e notificações precisas.", "en": "Mobile app for medication tracking and smart reminders, focused on accessibility and precise notifications." },
+    "imageAlt": { "pt": "Tela do MedControlApp", "en": "MedControlApp screen" }
+  },
+  {
+    "id": "marmitas",
+    "name": "Marmitas da Ka",
+    "image": "images/MarmitasDaKa.png",
+    "url": null,
+    "tag": { "pt": "Landing page", "en": "Landing page" },
+    "description": { "pt": "Landing page responsiva para negócio local, com catálogo de produtos, depoimentos e chamada para ação otimizada para conversão.", "en": "Responsive landing page for a local business, with product catalog, testimonials and a conversion-focused call to action." },
+    "imageAlt": { "pt": "Página inicial do site Marmitas da Ka", "en": "Marmitas da Ka website home page" }
+  },
+  {
+    "id": "wallet",
+    "name": "@wallet App",
+    "image": "images/WalletAPP.png",
+    "url": null,
+    "tag": { "pt": "Dashboard web", "en": "Web dashboard" },
+    "description": { "pt": "Interface web para monitoramento financeiro, com gráficos e filtros dinâmicos pensados para decisões rápidas.", "en": "Web interface for financial monitoring with dynamic charts and filters built for quick decisions." },
+    "imageAlt": { "pt": "Painel do @wallet App", "en": "@wallet App dashboard" }
+  }
+]

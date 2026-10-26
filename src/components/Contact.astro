@@ -1,0 +1,17 @@
+---
+import profile from '../data/profile.json';
+import ui from '../data/ui.json';
+import { t } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+---
+<section class="section container" id="contato">
+  <h2 class="section__title">{t(ui.sections.contato, lang)}</h2>
+  <p>{t(ui.contact.text, lang)}</p>
+  <ul class="contact">
+    <li><a href={`mailto:${profile.email}`}>{profile.email}</a></li>
+    <li><a href={profile.links.linkedin} target="_blank" rel="noopener">LinkedIn</a></li>
+    <li><a href={profile.links.github} target="_blank" rel="noopener">GitHub</a></li>
+    <li><a href={profile.links.instagram} target="_blank" rel="noopener">Instagram</a></li>
+  </ul>
+</section>
