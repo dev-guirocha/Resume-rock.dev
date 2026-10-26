@@ -1,0 +1,17 @@
+{
+  "name": "resume-rock-dev",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test:data": "node --test tests/data.test.mjs",
+    "test": "astro build && node --test \"tests/*.test.mjs\"",
+    "crivo": "node scripts/crivo.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.8"
+  }
+}
