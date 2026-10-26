@@ -100,3 +100,7 @@ test('CSS: menu recolhe até 1080px e o hero de impressão usa uma coluna', () =
   assert.ok(printBlock, 'falta o bloco @media print');
   assert.match(printBlock[1], /\.hero \{ grid-template-columns: 1fr/);
 });
+
+test('não sobra arquivo do site antigo na raiz', () => {
+  for (const f of ['index.html', 'script.js', 'style.css']) assert.ok(!existsSync(f), `${f} ainda existe`);
+});
