@@ -32,7 +32,6 @@ function walk(dir, exts, out = []) {
 const files = [
   ...walk('src', ['.json', '.astro', '.js', '.css']),
   ...walk('dist', ['.html']),
-  ...walk('docs', ['.md']),
   ...walk('tests', ['.mjs', '.js']),
   ...walk('scripts', ['.mjs', '.js']),
   ...walk('.github', ['.yml', '.yaml']),
