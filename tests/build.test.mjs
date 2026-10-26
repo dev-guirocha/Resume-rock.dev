@@ -104,3 +104,14 @@ test('CSS: menu recolhe até 1080px e o hero de impressão usa uma coluna', () =
 test('não sobra arquivo do site antigo na raiz', () => {
   for (const f of ['index.html', 'script.js', 'style.css']) assert.ok(!existsSync(f), `${f} ainda existe`);
 });
+
+test('acessibilidade e impressão: scroll-margin, movimento reduzido, nomes dos idiomas', () => {
+  const css = readFileSync('src/styles/global.css', 'utf8');
+  assert.match(css, /section\[id\] \{ scroll-margin-top: 72px; \}/);
+  assert.match(css, /prefers-reduced-motion: no-preference/);
+  assert.doesNotMatch(css, /^html \{ scroll-behavior: smooth; \}/m);
+  for (const lang of LANGS) {
+    assert.match(page(lang), /aria-label="Português"/);
+    assert.match(page(lang), /aria-label="English"/);
+  }
+});

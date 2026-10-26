@@ -16,8 +16,8 @@ const sections = ['experiencia', 'projetos', 'competencias', 'formacao', 'cursos
       </ul>
     </nav>
     <div class="lang-switch" role="group" aria-label={t(ui.language.label, lang)}>
-      <a href={langHome('pt')} hreflang="pt-BR" aria-current={lang === 'pt' ? 'page' : undefined}>PT</a>
-      <a href={langHome('en')} hreflang="en" aria-current={lang === 'en' ? 'page' : undefined}>EN</a>
+      <a href={langHome('pt')} hreflang="pt-BR" lang="pt-BR" aria-label="Português" aria-current={lang === 'pt' ? 'page' : undefined}>PT</a>
+      <a href={langHome('en')} hreflang="en" lang="en" aria-label="English" aria-current={lang === 'en' ? 'page' : undefined}>EN</a>
     </div>
   </div>
 </header>
