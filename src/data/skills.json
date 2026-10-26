@@ -1,0 +1,18 @@
+[
+  {
+    "title": { "pt": "Dados e BI", "en": "Data & BI" },
+    "items": ["SQL", "Python", { "pt": "Modelagem de métricas", "en": "Metric modeling" }, "Dashboards", { "pt": "Conciliação de fontes", "en": "Source reconciliation" }]
+  },
+  {
+    "title": { "pt": "Engenharia", "en": "Engineering" },
+    "items": ["PostgreSQL", "Supabase (RLS, PL/pgSQL)", "React", "Vite", "Node.js", "Astro", "Git"]
+  },
+  {
+    "title": { "pt": "IA e qualidade", "en": "AI & quality" },
+    "items": ["Claude Code", "Codex", { "pt": "Desenvolvimento com agentes", "en": "Agent-driven development" }, { "pt": "Testes automatizados", "en": "Automated testing" }, { "pt": "Validação de dados", "en": "Data validation" }]
+  },
+  {
+    "title": { "pt": "Segurança da informação", "en": "Information security" },
+    "items": ["LGPD", { "pt": "Mapeamento de controles", "en": "Control mapping" }, { "pt": "Governança da informação", "en": "Information governance" }]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "real-invest",
+    "org": { "pt": "Real Invest — escritório XP Investimentos", "en": "Real Invest — XP Investimentos office" },
+    "role": { "pt": "Analista de BI", "en": "BI Analyst" },
+    "period": { "pt": "jul/2026 – atual", "en": "Jul 2026 – present" },
+    "highlights": [
+      {
+        "title": { "pt": "Diretor da Comissão de Segurança da Informação", "en": "Director, Information Security Committee" },
+        "text": { "pt": "mapeamento de controles, governança da informação e adequação à LGPD.", "en": "control mapping, information governance and LGPD (Brazilian data protection law) compliance." }
+      },
+      {
+        "title": { "pt": "Especialista em IA aplicada", "en": "Applied AI specialist" },
+        "text": { "pt": "desenvolvimento orientado por agentes (Claude Code e Codex com revisão cruzada), automação de rotinas e skills próprias.", "en": "agent-driven development (Claude Code and Codex with cross-review), routine automation and custom skills." }
+      },
+      {
+        "title": { "pt": "4 sistemas em produção em 4 meses", "en": "4 production systems in 4 months" },
+        "items": [
+          { "pt": "Painéis de BI de captação, receita e acompanhamento 1:1 dos assessores, alimentados por exports e pela API da plataforma de CRM do escritório.", "en": "BI dashboards for net inflows, revenue and advisor 1:1 tracking, fed by exports and the office CRM platform's API." },
+          { "pt": "Motor de comissões e repasse, com réguas por produto (investimentos, consórcio, seguros) e conciliação entre fontes.", "en": "Commission and payout engine with per-product rules (investments, consortium, insurance) and cross-source reconciliation." },
+          { "pt": "Plataforma comercial/CRM em Supabase (PostgreSQL, PL/pgSQL, RLS) com front-end em React/Vite.", "en": "Sales/CRM platform on Supabase (PostgreSQL, PL/pgSQL, RLS) with a React/Vite front end." },
+          { "pt": "Painel de TV de captação para o escritório.", "en": "Office TV dashboard for net inflows." }
+        ]
+      },
+      {
+        "title": { "pt": "Qualidade de dado como prática", "en": "Data quality as a practice" },
+        "text": { "pt": "testes que travam regressão e reconciliação entre fontes antes de publicar qualquer número.", "en": "regression-locking tests and cross-source reconciliation before any number is published." }
+      }
+    ],
+    "tags": ["SQL", "Python", "PostgreSQL", "Supabase", "React", "Claude Code"]
+  },
+  {
+    "id": "freelancer",
+    "org": { "pt": "Freelancer", "en": "Freelance" },
+    "role": { "pt": "Desenvolvimento web e mobile", "en": "Web & mobile development" },
+    "highlights": [
+      {
+        "title": { "pt": "Site da Marmitas da Ka", "en": "Marmitas da Ka website" },
+        "text": { "pt": "landing page responsiva para negócio local.", "en": "responsive landing page for a local business." }
+      },
+      {
+        "title": { "pt": "Aplicativos autônomos", "en": "Standalone apps" },
+        "text": { "pt": "MedControlApp e @wallet App, do levantamento de requisitos à interface.", "en": "MedControlApp and @wallet App, from requirements to interface." }
+      }
+    ]
+  }
+]
