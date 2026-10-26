@@ -33,12 +33,20 @@ const files = [
   ...walk('src', ['.json', '.astro', '.js', '.css']),
   ...walk('dist', ['.html']),
   ...walk('docs', ['.md']),
+  ...walk('tests', ['.mjs', '.js']),
+  ...walk('scripts', ['.mjs', '.js']),
+  ...walk('.github', ['.yml', '.yaml']),
   'README.md',
 ];
+const escape = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const patterns = terms.map((term) => ({
+  term,
+  re: new RegExp(`(?<![\\p{L}\\p{N}])${escape(term)}(?![\\p{L}\\p{N}])`, 'iu'),
+}));
 const hits = [];
 for (const f of files) {
-  const text = readFileSync(f, 'utf8').toLowerCase();
-  for (const term of terms) if (text.includes(term.toLowerCase())) hits.push(`${f}: "${term}"`);
+  const text = readFileSync(f, 'utf8');
+  for (const { term, re } of patterns) if (re.test(text)) hits.push(`${f}: "${term}"`);
 }
 console.log(`crivo: ${terms.length} termos × ${files.length} arquivos conferidos`);
 if (hits.length) {
