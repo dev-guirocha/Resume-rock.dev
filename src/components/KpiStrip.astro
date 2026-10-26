@@ -8,7 +8,7 @@ const { lang } = Astro.props;
 <ul class="kpis" aria-label={t(ui.hero.kpisLabel, lang)}>
   {profile.kpis.map((kpi) => (
     <li class="kpi" data-kpi>
-      <span class="kpi__value">{kpi.value}</span>
+      <span class="kpi__value">{t(kpi.value, lang)}</span>
       <span class="kpi__label">{t(kpi.label, lang)}</span>
     </li>
   ))}

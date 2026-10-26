@@ -16,6 +16,6 @@
     { "value": "4", "label": { "pt": "sistemas em produção", "en": "systems in production" } },
     { "value": "4", "label": { "pt": "meses (jul–out/2026)", "en": "months (Jul–Oct 2026)" } },
     { "value": "2", "label": { "pt": "pós-graduações concluídas", "en": "postgraduate degrees completed" } },
-    { "value": "SI", "label": { "pt": "Diretor da Comissão de Segurança da Informação", "en": "Director, Information Security Committee" } }
+    { "value": { "pt": "SI", "en": "InfoSec" }, "label": { "pt": "Diretor da Comissão de Segurança da Informação", "en": "Director, Information Security Committee" } }
   ]
 }

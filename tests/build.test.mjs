@@ -84,3 +84,19 @@ test('contato tem e-mail, LinkedIn e GitHub; rodapé tem o ano', () => {
     assert.match(html, new RegExp(`© ${year}`));
   }
 });
+
+test('KPI de Segurança da Informação traduzido no EN', () => {
+  assert.match(page('pt'), /class="kpi__value">SI</);
+  assert.match(page('en'), /class="kpi__value">InfoSec</);
+  assert.doesNotMatch(page('en'), /class="kpi__value">SI</);
+});
+
+test('CSS: menu recolhe até 1080px e o hero de impressão usa uma coluna', () => {
+  const css = readFileSync('src/styles/global.css', 'utf8');
+  const navBlock = css.match(/@media \(max-width: 1080px\) \{([\s\S]*?)\n\}/);
+  assert.ok(navBlock, 'falta o bloco @media (max-width: 1080px)');
+  assert.match(navBlock[1], /\.site-nav__toggle \{ display: inline-block/);
+  const printBlock = css.match(/@media print \{([\s\S]*?)\n\}/);
+  assert.ok(printBlock, 'falta o bloco @media print');
+  assert.match(printBlock[1], /\.hero \{ grid-template-columns: 1fr/);
+});

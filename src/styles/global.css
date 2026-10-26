@@ -29,7 +29,7 @@ a:hover { color: var(--accent-strong); }
 /* cabeçalho */
 .site-header { position: sticky; top: 0; z-index: 10; background: rgba(11, 15, 20, 0.92); backdrop-filter: blur(8px); border-bottom: 1px solid var(--border); }
 .site-header__inner { display: flex; align-items: center; gap: 16px; min-height: 60px; }
-.site-header__logo { font-weight: 700; color: var(--text); text-decoration: none; margin-right: auto; }
+.site-header__logo { font-weight: 700; color: var(--text); text-decoration: none; margin-right: auto; white-space: nowrap; }
 .site-nav__toggle { display: none; }
 .site-nav__list { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
 .site-nav__list a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
@@ -106,11 +106,14 @@ a:hover { color: var(--accent-strong); }
 .contact a:hover { background: var(--surface-2); }
 .site-footer { border-top: 1px solid var(--border); padding-block: 24px; color: var(--muted); font-size: 0.85rem; text-align: center; }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .site-nav__toggle { display: inline-block; font: inherit; background: transparent; color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; }
   .site-nav__list { display: none; position: absolute; top: 60px; left: 0; right: 0; flex-direction: column; gap: 0; background: var(--bg); border-bottom: 1px solid var(--border); padding: 8px var(--gutter); }
   .site-nav__list.is-open { display: flex; }
   .site-nav__list a { display: block; padding: 10px 0; }
+}
+
+@media (max-width: 768px) {
   .hero { grid-template-columns: 1fr; gap: 20px; }
   .hero__photo { width: 112px; height: 112px; }
   .kpis { grid-template-columns: repeat(2, 1fr); }
@@ -124,5 +127,6 @@ a:hover { color: var(--accent-strong); }
   .section { padding-block: 16px; }
   .timeline__item, .card, .education__item, .skills__group, .kpi { break-inside: avoid; }
   .course[hidden] { display: grid; }
+  .hero { grid-template-columns: 1fr; padding-block: 0 16px; }
   a { color: var(--text); text-decoration: none; }
 }
