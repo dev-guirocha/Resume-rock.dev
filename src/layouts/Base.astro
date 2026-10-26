@@ -1,0 +1,21 @@
+---
+import '../styles/global.css';
+import { langHome } from '../lib/i18n.js';
+
+const { lang, title, description } = Astro.props;
+const htmlLang = lang === 'pt' ? 'pt-BR' : 'en';
+---
+<!doctype html>
+<html lang={htmlLang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="alternate" hreflang="pt-BR" href={new URL(langHome('pt'), Astro.site).href} />
+    <link rel="alternate" hreflang="en" href={new URL(langHome('en'), Astro.site).href} />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

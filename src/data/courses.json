@@ -1,0 +1,262 @@
+[
+  {
+    "id": "ai-marketing",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Inteligência Artificial: campanhas de Marketing Digital",
+      "en": "Artificial Intelligence: Digital Marketing Campaigns"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Inteligência Artificial_ campanhas de Marketing Digital - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Artificial Intelligence_ Digital Marketing campaigns - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "html-css-1",
+    "category": "frontend",
+    "title": {
+      "pt": "HTML5 e CSS3 parte 1: crie uma página da Web",
+      "en": "HTML5 and CSS3 Part 1: Create a Webpage"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso HTML5 e CSS3 parte 1_ crie uma página da Web - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course HTML5 and CSS3 part 1_ Create a webpage - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "negociacao-ia",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Negociação: treinando habilidades com IA",
+      "en": "Negotiation: Training Skills with AI"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Negociação_ treinando habilidades com IA - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Negotiation_ training skills with AI - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "aprendizagem-chatgpt",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Aprendizagem: personalizando sua rotina de estudos com ChatGPT",
+      "en": "Learning: Customizing Your Study Routine with ChatGPT"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Aprendizagem_ personalizando sua rotina de estudos com ChatGPT - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Learning_ customizing your study routine with ChatGPT - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "copywriting-ia",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Copywriting: criando textos persuasivos com Inteligência Artificial",
+      "en": "Copywriting: Creating Persuasive Texts with Artificial Intelligence"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Copywriting_ criando textos persuasivos com Inteligência Artificial - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Copywriting_ creating persuasive texts with Artificial Intelligence - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "chatgpt-conversas",
+    "category": "ferramentas",
+    "title": {
+      "pt": "ChatGPT: desvendando a IA em conversas e suas aplicações",
+      "en": "ChatGPT: Unveiling AI in Conversations and Its Applications"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso ChatGPT_ desvendando a IA em conversas e suas aplicações - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course ChatGPT_ unveiling AI in conversations and its applications - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "chatgpt-qualidade",
+    "category": "ferramentas",
+    "title": {
+      "pt": "ChatGPT: otimizando a qualidade dos resultados",
+      "en": "ChatGPT: Optimizing the Quality of Results"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso ChatGPT_ otimizando a qualidade dos resultados - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course ChatGPT_ optimizing the quality of results - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "prompt-engineering",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Engenharia de Prompt: criando prompts eficazes para IA Generativa",
+      "en": "Prompt Engineering: Creating Effective Prompts for Generative AI"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Engenharia de Prompt_ criando prompts eficazes para IA Generativa - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Prompt Engineering_ creating effective prompts for Generative AI - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "ia-potencial",
+    "category": "ferramentas",
+    "title": {
+      "pt": "IA: explorando o potencial da inteligência artificial generativa",
+      "en": "AI: Exploring the Potential of Generative Artificial Intelligence"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso IA_ explorando o potencial da inteligência artificial generativa - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course AI_ exploring the potential of generative artificial intelligence - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "html-css-4",
+    "category": "frontend",
+    "title": {
+      "pt": "HTML5 e CSS3 parte 4: avançando no CSS",
+      "en": "HTML5 and CSS3 Part 4: Advancing in CSS"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso HTML5 e CSS3 parte 4_ avançando no CSS - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course HTML5 and CSS3 Part 4_ Advancing in CSS - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "html-css-2",
+    "category": "frontend",
+    "title": {
+      "pt": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+      "en": "HTML5 and CSS3 Part 2: Positioning, Lists and Navigation"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso HTML5 e CSS3 parte 2_ posicionamento, listas e navegação - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course HTML5 and CSS3 part 2_ Positioning, Lists and Navigation - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "html-css-3",
+    "category": "frontend",
+    "title": {
+      "pt": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+      "en": "HTML5 and CSS3 Part 3: Working with Forms and Tables"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso HTML5 e CSS3 parte 3_ trabalhando com formulários e tabelas - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course HTML5 and CSS3 Part 3_ Working with forms and tables - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "js-web",
+    "category": "frontend",
+    "title": {
+      "pt": "JavaScript para Web: Crie páginas dinâmicas",
+      "en": "JavaScript for the Web: Create Dynamic Pages"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso JavaScript para Web_ Crie páginas dinâmicas - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course JavaScript for the Web_ Create Dynamic Pages - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "js-explorando",
+    "category": "frontend",
+    "title": {
+      "pt": "JavaScript: explorando a linguagem",
+      "en": "JavaScript: Exploring the Language"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso JavaScript_ explorando a linguagem - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course JavaScript_ Exploring the Language - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "logica-programacao",
+    "category": "frontend",
+    "title": {
+      "pt": "Lógica de programação: mergulhe em programação com JavaScript",
+      "en": "Programming Logic: Dive into Programming with JavaScript"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Lógica de programação_ mergulhe em programação com JavaScript - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Programming logic_ dive into programming with JavaScript - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "js-linguagem-web",
+    "category": "frontend",
+    "title": {
+      "pt": "JavaScript: programando na linguagem da web",
+      "en": "JavaScript: Programming in the Language of the Web"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso JavaScript_ programando na linguagem da web - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course JavaScript_ Programming in the Language of the Web - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "pmi-cultura-agil",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Certificação PMI-ACP: conheça a Cultura Ágil e seu potencial de aplicação",
+      "en": "PMI-ACP Certification: Learn About the Agile Culture and Its Application Potential"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Certificação PMI-ACP_ conheça a Cultura Ágil e seu potencial de aplicação - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course PMI-ACP certification_ learn about the Agile Culture and its application potential - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "pmi-scrum-mais",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Certificação PMI-ACP: entenda mais sobre o Scrum",
+      "en": "PMI-ACP Certification: Understand More About Scrum"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Certificação PMI-ACP_ entenda mais sobre o Scrum - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course PMI-ACP Certification_ Understand more about Scrum - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "pmi-estrutura-scrum",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Certificação PMI-ACP: entenda a estrutura do Scrum",
+      "en": "PMI-ACP Certification: Understand the Scrum Framework"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Certificação PMI-ACP_ entenda a estrutura do Scrum - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course PMI-ACP Certification_ Understand the Scrum Framework - Alura.pdf"
+    },
+    "institution": "Alura"
+  },
+  {
+    "id": "ia-midias-sociais",
+    "category": "ferramentas",
+    "title": {
+      "pt": "Inteligência Artificial: gestão de mídias sociais",
+      "en": "Artificial Intelligence: Social Media Management"
+    },
+    "links": {
+      "pt": "images/certificados/Guilherme Rocha - Curso Inteligência Artificial_ gestão de mídias sociais - Alura.pdf",
+      "en": "images/Certificates/Guilherme Rocha - Course Artificial Intelligence_ social media management - Alura.pdf"
+    },
+    "institution": "Alura"
+  }
+]

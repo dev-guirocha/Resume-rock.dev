@@ -1,0 +1,44 @@
+---
+import courses from '../data/courses.json';
+import ui from '../data/ui.json';
+import { t, withBase } from '../lib/i18n.js';
+
+const { lang } = Astro.props;
+const categories = [...new Set(courses.map((c) => c.category))];
+---
+<section class="section container" id="cursos">
+  <h2 class="section__title">{t(ui.sections.cursos, lang)}</h2>
+  <div class="filter" role="group" aria-label={t(ui.courses.filterLabel, lang)} data-course-filter>
+    <button type="button" data-category="todos" aria-pressed="true">{t(ui.courses.all, lang)}</button>
+    {categories.map((c) => (
+      <button type="button" data-category={c} aria-pressed="false">{t(ui.courses.categories[c], lang)}</button>
+    ))}
+  </div>
+  <ul class="courses">
+    {courses.map((c) => (
+      <li class="course" data-course-item data-category={c.category}>
+        <span class="course__title">{t(c.title, lang)}</span>
+        <span class="course__inst">{c.institution}</span>
+        <a class="course__link" href={withBase(c.links[lang])} target="_blank" rel="noopener">{t(ui.courses.certificate, lang)}</a>
+      </li>
+    ))}
+  </ul>
+</section>
+
+<script>
+  const filter = document.querySelector('[data-course-filter]');
+  if (filter) {
+    const buttons = filter.querySelectorAll('button[data-category]');
+    const items = document.querySelectorAll('li.course');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === button)));
+        items.forEach((item) => {
+          const show = category === 'todos' || item.getAttribute('data-category') === category;
+          item.toggleAttribute('hidden', !show);
+        });
+      });
+    });
+  }
+</script>
